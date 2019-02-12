@@ -8,6 +8,8 @@ public class Main {
         //iterateAListPrevious();
         fullInterate();
 
+        //Iterator no se puede recorrer reverse, ni agregar (si remover)
+
     }
 
     private static void fullInterate() {
