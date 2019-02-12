@@ -6,9 +6,29 @@ public class Main {
         System.out.println("Utilidades para colecciones");
         //iterateAListNext();
         //iterateAListPrevious();
-        fullInterate();
+        //fullInterate();
+        //streamingCollection();
+        reversingCollection();
 
         //Iterator no se puede recorrer reverse, ni agregar (si remover)
+
+    }
+
+    private static void reversingCollection() {
+        List<String> myStringList;
+        myStringList = Arrays.asList("one","two","three","four");
+        List dynamicList = new ArrayList(myStringList);
+        dynamicList.stream().forEach( element -> System.out.println(element));
+        Collections.reverse(dynamicList);
+        System.out.println("***********");
+        dynamicList.stream().forEach( element -> System.out.println(element));
+    }
+
+    private static void streamingCollection() {
+        List<String> myStringList;
+        myStringList = Arrays.asList("one","two","three","four");
+        List dynamicList = new ArrayList(myStringList);
+        dynamicList.stream().forEach( element -> System.out.println(element));
 
     }
 
