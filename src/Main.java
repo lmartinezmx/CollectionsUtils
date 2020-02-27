@@ -6,9 +6,9 @@ public class Main {
         System.out.println("Utilidades para colecciones");
         //iterateAListNext();
         //iterateAListPrevious();
-        //fullInterate();
+        fullInterate();
         //streamingCollection();
-        reversingCollection();
+        //reversingCollection();
 
         //Iterator no se puede recorrer reverse, ni agregar (si remover)
 
@@ -103,6 +103,7 @@ public class Main {
             String previous = myListIterator.previous();
             //infinite loop :D
             //myListIterator.add("another_"+myListIterator.previousIndex());
+
             System.out.println("previous element: "+previous);
             dynamicList.forEach(System.out::println);
         }
